@@ -37,53 +37,7 @@
    {{>footer}}
    <script src="js/main.js"></script>
    
-    {{!-- //////////current day///// --}}
-    <script>
     
-        const getCurrentDay = () => {
-            let Weekday = new Array (7);
-            Weekday[0] = "sunday";
-            Weekday[1] = "monday";
-            Weekday[2] = "tuesday";
-            Weekday[3] = "wednesday";
-            Weekday[4] = "thursday";
-            Weekday[5] = "friday";
-            Weekday[6] = "saturday";
-            let currentTime = new Date();
-            // console.log(Weekday[currentTime.getDay()]);
-            days = Weekday[currentTime.getDay()]
-            let day = document.getElementById('day');
-
-           day.innerText = days;
-        };
-        getCurrentDay();
-   </script>
-   {{!-- <script>
-    const getCurrentTime = () => {
-            let months = [
-                "jan",
-                "feb",
-                "mar",
-                "apr",
-                "may",
-                "jun",
-                "july",
-                "aug",
-                "sep",
-                "oct",
-                "nov",
-                "des",
-            ];
-            let now = new Date();
-            let month = months[now.getMonth() + 1];
-            let date = now.getDate();
-           
-            dates = month[currentTime.getDate()]
-            let today_date = document.getElementById('today_date');
-            today_date.innerHTML = dates
-            {{!-- return `${month} ${date} ` --}}
-    };
-            getCurrentTime();
-   </script> --}}
+   
 </body>
 </html>
